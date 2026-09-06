@@ -4,7 +4,6 @@ const Beginning = () => {
   return (
     <div>
         <h1 className='text-2xl font-medium text-green-700'>Shopping Cart</h1>
-
     </div>
   )
 }

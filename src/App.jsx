@@ -64,8 +64,8 @@ const App = () => {
       </Routes>
 
 
-      {/* {!User ? <Login handleLogin={handleLogin} /> : ''}
-      {User=='user' ? <OpeningPage />:''} */}
+      {!User ? <Login handleLogin={handleLogin} /> : ''}
+      {User=='user' ? <OpeningPage />:''}
       
         
     </div>

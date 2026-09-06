@@ -10,22 +10,25 @@ const FilterChips = ({ activeStatus, setActiveStatus }) => {
   ]
 
   return (
-    <div className="py-5 sm:py-7 px-4 sm:px-10 flex flex-wrap justify-start gap-2 sm:gap-3">
+    <div className='w-full mt-4 overflow-hidden'>
+    <div className="flex gap-2 p-1 rounded-lg  overflow-x-auto scrollbar-hide">
       {filters.map((filter) => (
         <button
+   
           key={filter}
           onClick={() => setActiveStatus(filter)}
-          className={`cursor-pointer py-1.5 px-3 rounded-[20px] border font-medium text-sm transition-all duration-200
+          className={`shrink-0 py-1.5 px-3.5 rounded-[20px] border border-[#E0DDD6] text-[12px] font-medium cursor-pointer font-dm whitespace-nowrap transition-all duration-150 
             ${
               activeStatus === filter
-                ? 'bg-[#2E5235] text-white border-[#2E5235]'
-                : 'bg-white text-[#2E5235] border-gray-300 hover:bg-[#E8EFE9]'
+              ? 'bg-white border border-black text-[#2C2C2A] shadow-[0_1px_3px_rgba(0,0,0,0.08)]'
+              : 'text-[#7A7A76]'
             }`}
-        >
+            >
           {filter}
         </button>
       ))}
     </div>
+      </div>
   )
 }
 
