@@ -1,10 +1,10 @@
 import React from 'react'
 import Description from './Description'
 
-const DescriptionBox = () => {
+const DescriptionBox = ({ cart }) => {
   return (
-    <div className=''>
-        <Description/>
+    <div>
+      <Description cart={cart} />
     </div>
   )
 }

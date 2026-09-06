@@ -1,10 +1,10 @@
 import React from 'react'
 import { Heart } from 'lucide-react'
 
-const Cards = ({ bouquet, addToWishlist, wishlist }) => {
+const Cards = ({ bouquet, addToWishlist, addToCart, wishlist }) => {
 
     return (
-        <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-5 sm:px-2 lg:px-0'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-5 sm:px-2 lg:px-0'>
 
             {bouquet?.map((item) => {
 
@@ -88,8 +88,15 @@ const Cards = ({ bouquet, addToWishlist, wishlist }) => {
                                         ₹ {item.price}
                                     </h1>
 
-                                    <button className='bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer'>
-                                        {item.button}
+                                    <button
+                                        onClick={() => {
+                                            console.log("PLUS CLICKED");
+                                            console.log("addToCart function:", addToCart);
+                                            addToCart(item);
+                                        }}
+                                        className="bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer"
+                                    >
+                                        +
                                     </button>
 
                                 </div>

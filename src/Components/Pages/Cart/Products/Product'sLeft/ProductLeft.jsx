@@ -1,10 +1,10 @@
 import React from 'react'
 import DescriptionBox from './DescriptionBox/DescriptionBox'
 
-const ProductLeft = () => {
+const ProductLeft = ({ cart }) => {
   return (
-    <div className='w-2/3'>
-        <DescriptionBox/>
+    <div className="w-full lg:w-2/3">
+      <DescriptionBox cart={cart} />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { Minus, Plus } from 'lucide-react';
 const ProductQuantity = ({item}) => {
     return (
 
-        <div className='flex justify-between items-center w-[120px] h-[44px] border border-gray-200 rounded-md'>
+        <div className="flex h-11 w-[110px] items-center justify-between rounded-md border border-gray-200">
 
             <button className='w-10 flex justify-center text-gray-400 hover:text-green-700'>
 

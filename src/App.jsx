@@ -21,6 +21,7 @@ const App = () => {
     getLocalStorage()
   }, [])
 
+  const [cart, setCart] = useState([])
   const [User, setUser] = useState(null)
   const authData = useContext(AuthContext)
 
@@ -40,7 +41,23 @@ const App = () => {
       alert("Invalid crendentials");
     }
   }
+  const addToCart = (product) => {
+    setCart((currentCart) => {
+      const existingProduct = currentCart.find(
+        (item) => item.id === product.id
+      )
 
+      if (existingProduct) {
+        return currentCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        )
+      }
+
+      return [...currentCart, { ...product, quantity: 1 }]
+    })
+  }
 
   return (
     <div>
@@ -48,26 +65,26 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<OpeningPage />} />
-        <Route path='/shop' element={<ShoppingPage />} />
+        <Route path='/shop' element={<ShoppingPage addToCart={addToCart} />} />
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/home' element={<OpeningPage />} />
-        <Route path='/product' element={<ShoppingPage />} />
-        <Route path='/flowers' element={<ShoppingPage />} />
+        <Route path='/product' element={<ShoppingPage addToCart={addToCart} />} />
+        <Route path='/flowers' element={<ShoppingPage addToCart={addToCart} />} />
         <Route path='/packages' element={<ServicesPage />} />
         <Route path='/plans' element={<ServicesPage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUpPage />} />
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/profile' element={<Profile/>}/>
-        <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/cart' element={<Cart cart={cart} />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/wishlist' element={<Wishlist />} />
       </Routes>
 
 
-      {!User ? <Login handleLogin={handleLogin} /> : ''}
-      {User=='user' ? <OpeningPage />:''}
-      
-        
+      {/* {!User ? <Login handleLogin={handleLogin} /> : ''}
+      {User=='user' ? <OpeningPage />:''} */}
+
+
     </div>
   )
 }

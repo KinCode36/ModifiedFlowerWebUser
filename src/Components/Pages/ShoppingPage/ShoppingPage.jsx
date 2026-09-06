@@ -5,7 +5,7 @@ import Cards from '../OpeningPage/Section2/Cards'
 import EntireFooter from '../OpeningPage/Section6/EntireFooter'
 import { bouquetData } from '../../../utils/demo'
 
-const ShoppingPage = ({ addToWishlist, wishlist }) => {
+const ShoppingPage = ({ addToCart, addToWishlist, wishlist }) => {
   const [activeStatus, setActiveStatus] = useState('All')
 
   const filteredBouquets =
@@ -25,7 +25,9 @@ const ShoppingPage = ({ addToWishlist, wishlist }) => {
         setActiveStatus={setActiveStatus}
       />
 
-      <Cards bouquet={filteredBouquets}
+      <Cards
+        addToCart={addToCart}
+        bouquet={filteredBouquets}
         addToWishlist={addToWishlist}
         wishlist={wishlist}
       />

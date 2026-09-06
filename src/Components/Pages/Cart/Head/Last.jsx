@@ -3,14 +3,14 @@ import { UserRound, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 const Last = () => {
   return (
-    <div className='flex justify-between items-center gap-10'>
-        <Link to='/profile'>
+    <div className="flex items-center gap-6">
+      <Link to="/profile">
         <UserRound />
-        </Link>
-         
-        <Link to='/wishlist'>
+      </Link>
+
+      <Link to="/wishlist">
         <Heart />
-        </Link>
+      </Link>
     </div>
   )
 }
