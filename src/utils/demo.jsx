@@ -5,7 +5,8 @@ export const bouquetData = [
     id: 1,
     badge: "BESTSELLER",
     isFavourite: false,
-    image: "https://dehraflicks.com/wp-content/uploads/2025/07/rose-single-red-transparent-bg-png-dehraflicks.png",
+    image:
+      "https://dehraflicks.com/wp-content/uploads/2025/07/rose-single-red-transparent-bg-png-dehraflicks.png",
     category: "BOUQUETS",
     title: "Red Rose Bouquet",
     description: "12 Premium red roses",
@@ -13,14 +14,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#FDE2E4",
-    footerColor: "#FFF1C1"
+    footerColor: "#FFF1C1",
+    badgeColor: "#FFF1C1",
+    badgeTextColor: "#8B3E2F",
   },
 
   {
     id: 2,
     badge: "NEW",
     isFavourite: true,
-    image: "https://png.pngtree.com/png-clipart/20250112/original/pngtree-pink-rose-flower-png-image_19116731.png",
+    image:
+      "https://png.pngtree.com/png-clipart/20250112/original/pngtree-pink-rose-flower-png-image_19116731.png",
     category: "BOUQUETS",
     title: "Pink Rose Bouquet",
     description: "15 Fresh pink roses",
@@ -28,14 +32,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#FCE4EC",
-    footerColor: "#F8E8D6"
+    footerColor: "#F8E8D6",
+    badgeColor: "#E3F2FD",
+    badgeTextColor: "#1565C0",
   },
 
   {
     id: 3,
     badge: "TRENDING",
     isFavourite: false,
-    image: "https://png.pngtree.com/png-clipart/20231004/original/pngtree-white-lily-flower-png-image_13097547.png",
+    image:
+      "https://png.pngtree.com/png-clipart/20231004/original/pngtree-white-lily-flower-png-image_13097547.png",
     category: "SINGLE STEMS",
     title: "White Lily",
     description: "10 Elegant white lilies",
@@ -43,14 +50,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#EEF7F1",
-    footerColor: "#FFF8E7"
+    footerColor: "#FFF8E7",
+    badgeColor: "#F3E5F5",
+    badgeTextColor: "#7B1FA2",
   },
 
   {
     id: 4,
     badge: "POPULAR",
     isFavourite: false,
-    image: "https://static.vecteezy.com/system/resources/previews/025/279/124/non_2x/sunflower-bouquet-illustration-decor-png.png",
+    image:
+      "https://static.vecteezy.com/system/resources/previews/025/279/124/non_2x/sunflower-bouquet-illustration-decor-png.png",
     category: "SEASONAL",
     title: "Sunflower Bouquet",
     description: "8 Bright sunflowers",
@@ -58,14 +68,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#FFF4CC",
-    footerColor: "#FFE8B3"
+    footerColor: "#FFE8B3",
+    badgeColor: "#E8F5E9",
+    badgeTextColor: "#2E7D32",
   },
 
   {
     id: 5,
     badge: "BESTSELLER",
     isFavourite: true,
-    image: "https://png.pngtree.com/png-clipart/20240301/original/pngtree-pink-tulip-soft-in-formal-garden-decoration-in-valentine-day-png-image_14458999.png",
+    image:
+      "https://png.pngtree.com/png-clipart/20240301/original/pngtree-pink-tulip-soft-in-formal-garden-decoration-in-valentine-day-png-image_14458999.png",
     category: "SEASONAL",
     title: "Tulip Bouquet",
     description: "12 Colorful tulips",
@@ -73,14 +86,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#E8F5E9",
-    footerColor: "#DFF6DD"
+    footerColor: "#DFF6DD",
+    badgeColor: "#FFF1C1",
+    badgeTextColor: "#8B3E2F",
   },
 
   {
     id: 6,
     badge: "LIMITED",
     isFavourite: false,
-    image: "https://static.vecteezy.com/system/resources/previews/058/172/881/non_2x/beautiful-purple-orchid-flowers-isolated-on-a-transparent-background-showcasing-intricate-details-purple-orchid-flower-isolated-on-background-free-png.png",
+    image:
+      "https://static.vecteezy.com/system/resources/previews/058/172/881/non_2x/beautiful-purple-orchid-flowers-isolated-on-a-transparent-background-showcasing-intricate-details-purple-orchid-flower-isolated-on-background-free-png.png",
     category: "PREMIUM",
     title: "Orchid Bouquet",
     description: "10 Premium orchids",
@@ -88,14 +104,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#F3E5F5",
-    footerColor: "#EDE7F6"
+    footerColor: "#EDE7F6",
+    badgeColor: "#FCE4EC",
+    badgeTextColor: "#C2185B",
   },
 
   {
     id: 7,
     badge: "NEW",
     isFavourite: false,
-    image: "https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-carnation-pink-illustration-png-image_6694653.png",
+    image:
+      "https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-carnation-pink-illustration-png-image_6694653.png",
     category: "SINGLE STEMS",
     title: "Carnation",
     description: "18 Mixed carnations",
@@ -103,14 +122,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#FFF0F5",
-    footerColor: "#FDEBD0"
+    footerColor: "#FDEBD0",
+    badgeColor: "#E3F2FD",
+    badgeTextColor: "#1565C0",
   },
 
   {
     id: 8,
     badge: "POPULAR",
     isFavourite: true,
-    image: "https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-colorful-bouquet-of-flowers-with-daisy-and-gerbera-in-bright-yellow-png-image_15836080.png",
+    image:
+      "https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-colorful-bouquet-of-flowers-with-daisy-and-gerbera-in-bright-yellow-png-image_15836080.png",
     category: "SINGLE STEMS",
     title: "Gerbera",
     description: "15 Fresh gerberas",
@@ -118,14 +140,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#FFF8E1",
-    footerColor: "#FFE0B2"
+    footerColor: "#FFE0B2",
+    badgeColor: "#E8F5E9",
+    badgeTextColor: "#2E7D32",
   },
 
   {
     id: 9,
     badge: "BESTSELLER",
     isFavourite: false,
-    image: "https://static.vecteezy.com/system/resources/previews/044/245/681/non_2x/colorful-bouquet-of-mixed-flowers-in-full-bloom-png.png",
+    image:
+      "https://static.vecteezy.com/system/resources/previews/044/245/681/non_2x/colorful-bouquet-of-mixed-flowers-in-full-bloom-png.png",
     category: "SEASONAL",
     title: "Mixed Flower",
     description: "20 Seasonal flowers",
@@ -133,14 +158,17 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#E3F2FD",
-    footerColor: "#E1F5FE"
+    footerColor: "#E1F5FE",
+    badgeColor: "#FFF1C1",
+    badgeTextColor: "#8B3E2F",
   },
 
   {
     id: 10,
     badge: "PREMIUM",
     isFavourite: true,
-    image: "https://png.pngtree.com/png-clipart/20250428/original/pngtree-purple-lavender-png-image_20868046.png",
+    image:
+      "https://png.pngtree.com/png-clipart/20250428/original/pngtree-purple-lavender-png-image_20868046.png",
     category: "PREMIUM",
     title: "Lavender Bouquet",
     description: "12 Fragrant lavender stems",
@@ -148,8 +176,10 @@ export const bouquetData = [
     currency: "₹",
     button: "+",
     backgroundColor: "#EDE7F6",
-    footerColor: "#F3E5F5"
-  }
+    footerColor: "#F3E5F5",
+    badgeColor: "#FFF3E0",
+    badgeTextColor: "#E65100",
+  },
 ]
 
 export const feedbackData = [

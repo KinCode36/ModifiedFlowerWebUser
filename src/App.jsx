@@ -9,7 +9,7 @@ import OpeningPage from './Components/Pages/OpeningPage/OpeningPage'
 import ShoppingPage from './Components/Pages/ShoppingPage/ShoppingPage'
 import ServicesPage from './Components/Pages/ServicesPage/ServicesPage'
 import GalleryPage from './Components/Pages/GalleryPage/GalleryPage'
-import Navbar from './others/Navbar'
+import Navbar from './NavBar/Navbar'
 import PackagePayment from './Components/PackagePayment/PackagePayment'
 import Wishlist from './Components/PackagePayment/Wishlist/Wishlist'
 import Cart from './Components/Pages/Cart/Cart'
@@ -20,6 +20,7 @@ const App = () => {
     // setLocalStorage()
     getLocalStorage()
   }, [])
+
 
   const [User, setUser] = useState(null)
   const authData = useContext(AuthContext)
@@ -145,9 +146,10 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUpPage />} />
         <Route path='/cart' element={<Cart cart={cart} removeFromCart={removeFromCart} increaseQuantity={increaseQuantity}
-      decreaseQuantity={decreaseQuantity} />} />
+          decreaseQuantity={decreaseQuantity} />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/wishlist' element={<Wishlist wishlist={wishlist} removeFromWishlist={removeFromWishlist} />} />
+
       </Routes>
 
 

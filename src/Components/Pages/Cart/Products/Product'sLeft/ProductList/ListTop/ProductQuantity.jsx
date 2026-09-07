@@ -3,7 +3,7 @@ import { Minus, Plus } from 'lucide-react';
 const ProductQuantity = ({item,  increaseQuantity, decreaseQuantity,}) => {
     return (
 
-        <div className='flex justify-between items-center w-[120px] h-[44px] border border-gray-200 rounded-md'>
+        <div className="flex h-11 w-[110px] items-center justify-between rounded-md border border-gray-200">
 
             <button 
           onClick={() => decreaseQuantity(item.id)}
