@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heart } from 'lucide-react'
 
-const Cards = ({ bouquet, addToWishlist, wishlist }) => {
+const Cards = ({ bouquet, addToWishlist, wishlist, addToCart }) => {
 
     return (
         <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-0 py-5 sm:px-2 lg:px-0'>
@@ -86,7 +86,9 @@ const Cards = ({ bouquet, addToWishlist, wishlist }) => {
                                         {item.price}
                                     </h1>
 
-                                    <button className='bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer'>
+                                    <button
+                                     onClick={() => addToCart(item)}
+                                    className='bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer'>
                                         {item.button}
                                     </button>
 

@@ -152,7 +152,7 @@ export const bouquetData = [
   }
 ]
 
- export const feedbackData = [
+export const feedbackData = [
   {
     id: 1,
     rating: "⭐⭐⭐⭐⭐",
@@ -188,7 +188,7 @@ export const bouquetData = [
   },
 ];
 
- export const work = [
+export const work = [
   {
     id: 1,
     title: "Royal Wedding Decoration",
@@ -245,29 +245,29 @@ export const profileDetails = [
 ];
 
 export const sidebarButtons = [
-    {
-      id: 1,
-      title: "Home",
-      path: "/",
-    },
-    {
-      id: 2,
-      title: "Shop",
-      path: "/shop",
-    },
-    {
-      id: 3,
-      title: "Services",
-      path: "/services",
-    },
-    {
-      id: 4,
-      title: "Gallery",
-      path: "/gallery",
-    },
-  ];
+  {
+    id: 1,
+    title: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    title: "Shop",
+    path: "/shop",
+  },
+  {
+    id: 3,
+    title: "Services",
+    path: "/services",
+  },
+  {
+    id: 4,
+    title: "Gallery",
+    path: "/gallery",
+  },
+];
 
- export const cards = [
+export const cards = [
   {
     id: 1,
     name: "Shopping credit - Primary",
@@ -296,90 +296,90 @@ export const sidebarButtons = [
     expiry: "10/24",
     type: "amex",
   },
-]; 
-
-export const cartData = [
-  {
-    id: 1,
-    name: "Red Rose Bouquet",
-    price: 250,
-    quantity: 1,
-    subtotal: 250,
-    image: "https://dehraflicks.com/wp-content/uploads/2025/07/rose-single-red-transparent-bg-png-dehraflicks.png",
-  },
-  {
-    id: 2,
-    name: "Pink Rose Bouquet",
-    price: 300,
-    quantity: 1,
-    subtotal: 300,
-    image: "https://png.pngtree.com/png-clipart/20250112/original/pngtree-pink-rose-flower-png-image_19116731.png",
-  },
-  {
-    id: 3,
-    name: "White Lily Bouquet",
-    price: 350,
-    quantity: 2,
-    subtotal: 700,
-    image: "https://png.pngtree.com/png-clipart/20231004/original/pngtree-white-lily-flower-png-image_13097547.png",
-  },
-  {
-    id: 4,
-    name: "Sunflower Bouquet",
-    price: 280,
-    quantity: 1,
-    subtotal: 280,
-    image: "https://static.vecteezy.com/system/resources/previews/025/279/124/non_2x/sunflower-bouquet-illustration-decor-png.png",
-  },
-  {
-    id: 5,
-    name: "Tulip Bouquet",
-    price: 400,
-    quantity: 1,
-    subtotal: 400,
-    image: "https://png.pngtree.com/png-clipart/20240301/original/pngtree-pink-tulip-soft-in-formal-garden-decoration-in-valentine-day-png-image_14458999.png",
-  },
-  {
-    id: 6,
-    name: "Mixed Flower Bouquet",
-    price: 450,
-    quantity: 2,
-    subtotal: 900,
-    image: "https://static.vecteezy.com/system/resources/previews/044/245/681/non_2x/colorful-bouquet-of-mixed-flowers-in-full-bloom-png.png",
-  },
-  {
-    id: 7,
-    name: "Purple Orchid Bouquet",
-    price: 500,
-    quantity: 1,
-    subtotal: 500,
-    image: "https://static.vecteezy.com/system/resources/previews/058/172/881/non_2x/beautiful-purple-orchid-flowers-isolated-on-a-transparent-background-showcasing-intricate-details-purple-orchid-flower-isolated-on-background-free-png.png",
-  },
-  {
-    id: 8,
-    name: "Gerbera Bouquet",
-    price: 320,
-    quantity: 1,
-    subtotal: 320,
-    image: "https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-colorful-bouquet-of-flowers-with-daisy-and-gerbera-in-bright-yellow-png-image_15836080.png",
-  },
-  {
-    id: 9,
-    name: "Pink Carnation Bouquet",
-    price: 380,
-    quantity: 1,
-    subtotal: 380,
-    image: "https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-carnation-pink-illustration-png-image_6694653.png",
-  },
-  {
-    id: 10,
-    name: "Lavender Bouquet",
-    price: 650,
-    quantity: 1,
-    subtotal: 650,
-    image: "https://png.pngtree.com/png-clipart/20250428/original/pngtree-purple-lavender-png-image_20868046.png",
-  },
 ];
+
+// export const cartData = [
+//   {
+//     id: 1,
+//     name: "Red Rose Bouquet",
+//     price: 250,
+//     quantity: 1,
+//     subtotal: 250,
+//     image: "https://dehraflicks.com/wp-content/uploads/2025/07/rose-single-red-transparent-bg-png-dehraflicks.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Pink Rose Bouquet",
+//     price: 300,
+//     quantity: 1,
+//     subtotal: 300,
+//     image: "https://png.pngtree.com/png-clipart/20250112/original/pngtree-pink-rose-flower-png-image_19116731.png",
+//   },
+//   {
+//     id: 3,
+//     name: "White Lily Bouquet",
+//     price: 350,
+//     quantity: 2,
+//     subtotal: 700,
+//     image: "https://png.pngtree.com/png-clipart/20231004/original/pngtree-white-lily-flower-png-image_13097547.png",
+//   },
+//   {
+//     id: 4,
+//     name: "Sunflower Bouquet",
+//     price: 280,
+//     quantity: 1,
+//     subtotal: 280,
+//     image: "https://static.vecteezy.com/system/resources/previews/025/279/124/non_2x/sunflower-bouquet-illustration-decor-png.png",
+//   },
+//   {
+//     id: 5,
+//     name: "Tulip Bouquet",
+//     price: 400,
+//     quantity: 1,
+//     subtotal: 400,
+//     image: "https://png.pngtree.com/png-clipart/20240301/original/pngtree-pink-tulip-soft-in-formal-garden-decoration-in-valentine-day-png-image_14458999.png",
+//   },
+//   {
+//     id: 6,
+//     name: "Mixed Flower Bouquet",
+//     price: 450,
+//     quantity: 2,
+//     subtotal: 900,
+//     image: "https://static.vecteezy.com/system/resources/previews/044/245/681/non_2x/colorful-bouquet-of-mixed-flowers-in-full-bloom-png.png",
+//   },
+//   {
+//     id: 7,
+//     name: "Purple Orchid Bouquet",
+//     price: 500,
+//     quantity: 1,
+//     subtotal: 500,
+//     image: "https://static.vecteezy.com/system/resources/previews/058/172/881/non_2x/beautiful-purple-orchid-flowers-isolated-on-a-transparent-background-showcasing-intricate-details-purple-orchid-flower-isolated-on-background-free-png.png",
+//   },
+//   {
+//     id: 8,
+//     name: "Gerbera Bouquet",
+//     price: 320,
+//     quantity: 1,
+//     subtotal: 320,
+//     image: "https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-colorful-bouquet-of-flowers-with-daisy-and-gerbera-in-bright-yellow-png-image_15836080.png",
+//   },
+//   {
+//     id: 9,
+//     name: "Pink Carnation Bouquet",
+//     price: 380,
+//     quantity: 1,
+//     subtotal: 380,
+//     image: "https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-carnation-pink-illustration-png-image_6694653.png",
+//   },
+//   {
+//     id: 10,
+//     name: "Lavender Bouquet",
+//     price: 650,
+//     quantity: 1,
+//     subtotal: 650,
+//     image: "https://png.pngtree.com/png-clipart/20250428/original/pngtree-purple-lavender-png-image_20868046.png",
+//   },
+// ];
 
 export const orderSummary = {
   subtotal: 1435.00,
@@ -387,3 +387,4 @@ export const orderSummary = {
   shipping: "Free",
   total: 1026.23
 };
+

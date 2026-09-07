@@ -6,11 +6,11 @@ import Section4 from './Section4/Section4'
 import Section5 from './Section5/Section5'
 import Section6 from './Section6/Section6'
 
-const OpeningPage = ({ bouquet, feedback }) => {
+const OpeningPage = ({ bouquet, feedback, addToWishlist, wishlist, addToCart  }) => {
   return (
     <div>
       <Section1/>
-      <Section2/>
+      <Section2 addToWishlist={addToWishlist} wishlist={wishlist} addToCart={addToCart}/>
       <Section3/>
       <Section4/>
       <Section5/>

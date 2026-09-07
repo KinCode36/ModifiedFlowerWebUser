@@ -21,8 +21,8 @@ const LeftContent = () => {
                 </p>
             </div>
              <div className='p-4 flex flex-col sm:flex-row gap-3'>
-                <Link to='/flowers' className='bg-[#4A7A52] py-3 px-6 rounded-[8px] font-medium cursor-pointer hover:scale-90 duration-150 text-white transition-all text-sm'>Shop Flowers</Link>
-                <Link to='/plans' className='bg-transparent border-[#ffffff4d] border py-3 px-6 rounded-[8px] font-medium cursor-pointer hover:scale-90 duration-150 transition-all text-white text-sm'>Plan an Event</Link>
+                <Link to='/shop' className='bg-[#4A7A52] py-3 px-6 rounded-[8px] font-medium cursor-pointer hover:scale-90 duration-150 text-white transition-all text-sm'>Shop Flowers</Link>
+                <Link to='/services' className='bg-transparent border-[#ffffff4d] border py-3 px-6 rounded-[8px] font-medium cursor-pointer hover:scale-90 duration-150 transition-all text-white text-sm'>Plan an Event</Link>
              </div>
         </div>
     )

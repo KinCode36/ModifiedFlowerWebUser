@@ -1,11 +1,13 @@
 import React from 'react'
 import { Minus, Plus } from 'lucide-react';
-const ProductQuantity = ({item}) => {
+const ProductQuantity = ({item,  increaseQuantity, decreaseQuantity,}) => {
     return (
 
         <div className='flex justify-between items-center w-[120px] h-[44px] border border-gray-200 rounded-md'>
 
-            <button className='w-10 flex justify-center text-gray-400 hover:text-green-700'>
+            <button 
+          onClick={() => decreaseQuantity(item.id)}
+            className='w-10 flex justify-center text-gray-400 hover:text-green-700'>
 
                 <Minus size={14} />
             </button>
@@ -14,8 +16,9 @@ const ProductQuantity = ({item}) => {
                 {item.quantity}
             </span>
 
-            <button className='w-10 flex justify-center text-gray-400 hover:text-green-700'>
-
+            <button 
+             onClick={() => increaseQuantity(item.id)}
+            className='w-10 flex justify-center text-gray-400 hover:text-green-700'>
                 <Plus size={14} />
             </button>
 
