@@ -6,15 +6,20 @@ import Section4 from './Section4/Section4'
 import Section5 from './Section5/Section5'
 import Section6 from './Section6/Section6'
 
-const OpeningPage = ({ bouquet, feedback, addToWishlist, wishlist, addToCart  }) => {
+const OpeningPage = ({ bouquet, feedback, addToWishlist, wishlist, addToCart,
+  cart,
+  increaseQuantity,
+  decreaseQuantity }) => {
   return (
     <div>
-      <Section1/>
-      <Section2 addToWishlist={addToWishlist} wishlist={wishlist} addToCart={addToCart}/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-      <Section6/>
+      <Section1 />
+      <Section2 addToWishlist={addToWishlist} wishlist={wishlist} addToCart={addToCart} cart={cart}
+        increaseQuantity={increaseQuantity}
+        decreaseQuantity={decreaseQuantity} />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
     </div>
   )
 }

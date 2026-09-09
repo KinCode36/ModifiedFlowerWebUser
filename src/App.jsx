@@ -26,7 +26,15 @@ const App = () => {
   const authData = useContext(AuthContext)
 
   const [wishlist, setWishlist] = useState([])
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart")
+
+    return savedCart ? JSON.parse(savedCart) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart))
+  }, [cart])
 
   // { Wishlist Functionality }
 
@@ -50,10 +58,9 @@ const App = () => {
         (cartItem) => cartItem.id === item.id
       );
 
-      // If item already exists, increase quantity
       if (existingItem) {
         return prev.map((cartItem) =>
-          cartItem.id == item.id
+          cartItem.id === item.id
             ? {
               ...cartItem,
               quantity: cartItem.quantity + 1,
@@ -62,7 +69,6 @@ const App = () => {
         );
       }
 
-      // If item doesn't exist, add it
       return [
         ...prev,
         {
@@ -100,19 +106,18 @@ const App = () => {
 
   const decreaseQuantity = (id) => {
     setCart((prev) =>
-      prev.map((item) =>
-        item.id == id
-          ? {
-            ...item,
-            quantity: item.quantity > 1
-              ? item.quantity - 1
-              : 1,
-          }
-          : item
-      )
+      prev
+        .map((item) =>
+          item.id === id
+            ? {
+              ...item,
+              quantity: item.quantity - 1,
+            }
+            : item
+        )
+        .filter((item) => item.quantity > 0)
     );
   };
-
 
   const handleLogin = (Email, Otp) => {
 
@@ -138,17 +143,80 @@ const App = () => {
 
       <Navbar />
       <Routes>
-        <Route path='/' element={<OpeningPage addToWishlist={addToWishlist} wishlist={wishlist} addToCart={addToCart} />} />
-        <Route path='/shop' element={<ShoppingPage addToWishlist={addToWishlist} wishlist={wishlist} addToCart={addToCart} />} />
-        <Route path='/services' element={<ServicesPage />} />
-        <Route path='/gallery' element={<GalleryPage />} />
-        <Route path='/product' element={<ShoppingPage />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUpPage />} />
-        <Route path='/cart' element={<Cart cart={cart} removeFromCart={removeFromCart} increaseQuantity={increaseQuantity}
-          decreaseQuantity={decreaseQuantity} />} />
-        <Route path='/profile' element={<Profile />} />
-        <Route path='/wishlist' element={<Wishlist wishlist={wishlist} removeFromWishlist={removeFromWishlist} />} />
+
+        <Route
+          path='/'
+          element={
+            <OpeningPage
+              addToWishlist={addToWishlist}
+              wishlist={wishlist}
+              addToCart={addToCart}
+              cart={cart}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
+          }
+        />
+
+        <Route
+          path="/shop"
+          element={
+            <ShoppingPage
+              addToWishlist={addToWishlist}
+              wishlist={wishlist}
+              addToCart={addToCart}
+              cart={cart}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
+          }
+        />
+
+        <Route
+          path='/services'
+          element={
+            <ServicesPage
+            />
+          }
+        />
+
+        <Route
+          path='/gallery'
+          element={
+            <GalleryPage
+            />
+          }
+        />
+
+
+        <Route
+          path='/profile'
+          element={
+            <Profile
+            />
+          }
+        />
+
+        <Route
+          path='/wishlist' element={
+            <Wishlist
+              wishlist={wishlist}
+              removeFromWishlist={removeFromWishlist}
+            />
+          }
+        />
+
+        <Route
+          path='/cart'
+          element={
+            <Cart
+              cart={cart}
+              removeFromCart={removeFromCart}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
+          }
+        />
 
       </Routes>
 

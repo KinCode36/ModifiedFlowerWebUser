@@ -5,11 +5,15 @@ import Cards from '../OpeningPage/Section2/Cards'
 import EntireFooter from '../OpeningPage/Section6/EntireFooter'
 import { bouquetData } from '../../../utils/demo'
 
-<<<<<<< HEAD
-const ShoppingPage = ({ addToWishlist, wishlist, addToCart }) => {
-=======
-const ShoppingPage = ({ addToCart, addToWishlist, wishlist }) => {
->>>>>>> 5fee06513e37be9d17a9e10deeeb81d3aad2bb2b
+const ShoppingPage = ({
+  addToCart,
+  addToWishlist,
+  wishlist,
+  cart,
+  increaseQuantity,
+  decreaseQuantity
+}) => {
+
   const [activeStatus, setActiveStatus] = useState('All')
 
   const filteredBouquets =
@@ -22,6 +26,7 @@ const ShoppingPage = ({ addToCart, addToWishlist, wishlist }) => {
 
   return (
     <div className="bg-[#F7F4EE] font-serif min-h-screen px-2">
+
       <Head1 productCount={filteredBouquets.length} />
 
       <FilterChips
@@ -34,10 +39,13 @@ const ShoppingPage = ({ addToCart, addToWishlist, wishlist }) => {
         bouquet={filteredBouquets}
         addToWishlist={addToWishlist}
         wishlist={wishlist}
-        addToCart={addToCart}
+        cart={cart}
+        increaseQuantity={increaseQuantity}
+        decreaseQuantity={decreaseQuantity}
       />
 
       <EntireFooter />
+
     </div>
   )
 }

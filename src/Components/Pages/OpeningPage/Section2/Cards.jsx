@@ -1,29 +1,36 @@
 import React from 'react'
 import { Heart } from 'lucide-react'
 
-<<<<<<< HEAD
-const Cards = ({ bouquet, addToWishlist, wishlist, addToCart }) => {
-=======
-const Cards = ({ bouquet, addToWishlist, addToCart, wishlist }) => {
->>>>>>> 5fee06513e37be9d17a9e10deeeb81d3aad2bb2b
+const Cards = ({
+    bouquet,
+    addToWishlist,
+    wishlist,
+    addToCart,
+    cart,
+    increaseQuantity,
+    decreaseQuantity
+}) => {
 
     return (
         <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-5 sm:px-2 lg:px-0'>
 
             {bouquet?.map((item) => {
 
-                // Check whether this product is already in wishlist
                 const isWishlisted = wishlist?.some(
                     (wishItem) => wishItem.id === item.id
+                )
+
+                // Find this product in cart
+                const cartItem = cart?.find(
+                    (cartItem) => cartItem.id === item.id
                 )
 
                 return (
                     <div
                         key={item.id}
-                        className='h-auto flex justify-center'
+                        className='h-auto flex justify-center cursor-pointer'
                     >
 
-                        {/* Card1 */}
                         <div
                             className="rounded-xl w-full pt-2 transition-all duration-150 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30"
                             style={{
@@ -45,12 +52,12 @@ const Cards = ({ bouquet, addToWishlist, addToCart, wishlist }) => {
 
                                 <button
                                     onClick={() => addToWishlist(item)}
-                                    className="bg-[#ffffffe6] rounded-full p-2 cursor-pointer"
+                                    className="rounded-full p-2 cursor-pointer"
                                 >
                                     <Heart
                                         className={
                                             isWishlisted
-                                                ? "text-red-500 fill-red-500"
+                                                ? "text-red-500 fill-red-500 transition-all duration-150 scale-90"
                                                 : "text-[#C8897A]"
                                         }
                                     />
@@ -72,7 +79,7 @@ const Cards = ({ bouquet, addToWishlist, addToCart, wishlist }) => {
                             </div>
 
                             <div
-                                className='px-3 pt-2 sm:px-4 sm:pt-4  rounded-b-xl'
+                                className='px-3 pt-2 sm:px-4 sm:pt-4 rounded-b-xl'
                                 style={{
                                     backgroundColor: item.footerColor
                                 }}
@@ -92,22 +99,41 @@ const Cards = ({ bouquet, addToWishlist, addToCart, wishlist }) => {
                                         ₹ {item.price}
                                     </h1>
 
-                                    <button
-<<<<<<< HEAD
-                                     onClick={() => addToCart(item)}
-                                    className='bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer'>
-                                        {item.button}
-=======
-                                        onClick={() => {
-                                            console.log("PLUS CLICKED");
-                                            console.log("addToCart function:", addToCart);
-                                            addToCart(item);
-                                        }}
-                                        className="bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer"
-                                    >
-                                        +
->>>>>>> 5fee06513e37be9d17a9e10deeeb81d3aad2bb2b
-                                    </button>
+                                    {/* Quantity controls */}
+                                    {cartItem ? (
+
+                                        <div className="flex h-9 items-center rounded-[6px] border border-gray-300 overflow-hidden bg-white">
+
+                                            <button
+                                                onClick={() => decreaseQuantity(item.id)}
+                                                className="flex h-full w-9 items-center justify-center text-gray-600 hover:text-green-700"
+                                            >
+                                                −
+                                            </button>
+
+                                            <span className="flex h-full w-8 items-center justify-center text-sm font-medium">
+                                                {cartItem.quantity}
+                                            </span>
+
+                                            <button
+                                                onClick={() => increaseQuantity(item.id)}
+                                                className="flex h-full w-9 items-center justify-center text-gray-600 hover:text-green-700"
+                                            >
+                                                +
+                                            </button>
+
+                                        </div>
+
+                                    ) : (
+
+                                        <button
+                                            onClick={() => addToCart(item)}
+                                            className="bg-black text-white py-2 px-3 rounded-[6px] cursor-pointer"
+                                        >
+                                            +
+                                        </button>
+
+                                    )}
 
                                 </div>
 
