@@ -28,8 +28,6 @@ const GalleryPage = ({ bouquet }) => {
 
       <Section4 />
 
-      <EntireFooter />
-
     </div>
   )
 }

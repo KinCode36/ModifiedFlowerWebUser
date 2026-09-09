@@ -8,7 +8,7 @@ const ProductRight = ({ summary, cart }) => {
 
         <ProductSummary summary = {summary} cart = {cart}/>
  
-        {/* CheckOut */}
+       <CheckOutButton/>
 
     </div>
   )

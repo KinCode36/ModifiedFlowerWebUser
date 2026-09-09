@@ -25,7 +25,7 @@ const ShoppingPage = ({
       )
 
   return (
-    <div className="bg-[#F7F4EE] font-serif min-h-screen px-2">
+    <div className="bg-[#F7F4EE] font-serif min-h-screen ">
 
       <Head1 productCount={filteredBouquets.length} />
 
@@ -44,7 +44,6 @@ const ShoppingPage = ({
         decreaseQuantity={decreaseQuantity}
       />
 
-      <EntireFooter />
 
     </div>
   )

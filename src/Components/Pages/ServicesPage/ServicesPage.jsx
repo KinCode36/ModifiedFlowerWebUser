@@ -10,7 +10,6 @@ const ServicesPage = () => {
       <Upper />
       <OurPackage />
       <PackageCard />
-      <EntireFooter />
     </div>
   )
 }

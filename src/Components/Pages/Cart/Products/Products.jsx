@@ -2,6 +2,7 @@ import React from 'react'
 import ProductLeft from "./Product'sLeft/ProductLeft.jsx"
 import ProductRight from "./Product'sRight/ProductRight.jsx"
 import { orderSummary } from '../../../../utils/demo.jsx'
+import { Link } from 'react-router-dom'
 
 const Products = ({
   cart,
@@ -28,12 +29,10 @@ const Products = ({
             Looks like you haven't added anything to your cart yet.
           </p>
 
-          <a
-            href="/shop"
-            className="inline-block bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition"
+          <Link to="/shop" className="inline-block bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition"
           >
             Continue Shopping
-          </a>
+          </Link>
 
         </div>
       </div>
