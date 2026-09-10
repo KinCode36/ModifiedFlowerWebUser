@@ -42,7 +42,7 @@ const Products = ({
   const summary = orderSummary
 
   return (
-    <div className="flex  gap-10 p-6">
+    <div className="flex gap-10 p-6 sm:flex flex-col lg:flex-row">
 
       <ProductLeft
         cart={cart}

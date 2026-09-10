@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import EntireFooter from '../OpeningPage/Section6/EntireFooter'
 import Portfolio from './Portfolio'
 import Filterchips2 from './Filterchips2'
 import Section4 from '../OpeningPage/Section4/Section4'

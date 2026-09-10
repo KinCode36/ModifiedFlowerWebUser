@@ -10,7 +10,7 @@ const Product = ({ item, removeFromCart }) => {
             </button>
 
             <img src={item.image} alt={item.title}
-                className="w-16 h-16 object-cover rounded-sm"
+                className="w-16 h-16 xs:w-8 xs:h-8 object-cover rounded-sm"
             />
 
             <p className='text-sm font-medium text-gray-700'>

@@ -2,7 +2,6 @@ import React from 'react'
 import Upper from './Upper'
 import PackageCard from '../OpeningPage/Section3/PackageCard'
 import OurPackage from './OurPackage'
-import EntireFooter from '../OpeningPage/Section6/EntireFooter'
 
 const ServicesPage = () => {
   return (

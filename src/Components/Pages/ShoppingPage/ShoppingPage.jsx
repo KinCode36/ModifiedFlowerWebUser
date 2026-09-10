@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Head1 from './Head1'
 import FilterChips from './FilterChips'
 import Cards from '../OpeningPage/Section2/Cards'
-import EntireFooter from '../OpeningPage/Section6/EntireFooter'
 import { bouquetData } from '../../../utils/demo'
 
 const ShoppingPage = ({

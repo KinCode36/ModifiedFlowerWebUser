@@ -108,11 +108,11 @@ const Cards = ({
 
                                     <div className="flex justify-between py-2">
 
-                                        <h1 className="text-[#6B8F71] text-xs lg:text-sm">
+                                        <h1 className="text-[#6B8F71] text-xs lg:text-sm pt-2">
                                             {item.category}
                                         </h1>
 
-                                        <h1 className="text-[#4A7A52] text-sm flex justify-center items-center">
+                                        <h1 className="text-[#4A7A52] text-lg flex justify-center items-center">
                                             ₹ {item.price}
                                         </h1>
 
@@ -156,7 +156,7 @@ const Cards = ({
                                                 className="flex justify-between w-full"
                                             >
 
-                                                <button className="px-2 bg-fuchsia-400 hover:bg-fuchsia-500 rounded-md text-sm font-light transition">
+                                                <button className="px-2 bg-[#C8897A] hover:bg-[#365F3D] rounded-md text-sm text-[#FFFFFF] font-light transition">
                                                     Buy now
                                                 </button>
 
