@@ -2,8 +2,8 @@ import React from 'react'
 
 const Category = () => {
   return (
-    <div className='grid grid-cols-5'>
-      <div className='col-span-2'>
+    <div className='lg:grid grid grid-cols-5 xs:grid xs:grid-cols-4'>
+      <div className='lg:col-span-2'>
         <h2 className='text-sm font-medium'>Product</h2>
       </div>
 

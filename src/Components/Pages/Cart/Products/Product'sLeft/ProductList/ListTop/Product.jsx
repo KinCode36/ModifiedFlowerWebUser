@@ -8,14 +8,15 @@ const Product = ({ item, removeFromCart }) => {
                 className=' cursor-pointer'>
                 <X size={15} />
             </button>
-
+          <div className='lg:flex items-center gap-4'>
             <img src={item.image} alt={item.title}
-                className="w-16 h-16 xs:w-8 xs:h-8 object-cover rounded-sm"
-            />
+                className="w-8 h-8 lg:w-16 lg:h-16 object-cover rounded-sm"
+                />
 
-            <p className='text-sm font-medium text-gray-700'>
+            <p className='lg:text-sm font-medium text-gray-700 xs: text-[10px]'>
                 {item.title}
             </p>
+                </div>
 
         </div>
     )

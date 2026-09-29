@@ -8,14 +8,14 @@ import Category from '../../DescriptionBox/Category'
 const ProductList = ({ cart, removeFromCart,  increaseQuantity, decreaseQuantity, }) => {
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full overflow-x-auto ">
       <div className="min-w-[650px]">
         <Category />
 
         {cart?.map((item) => (
           <div
             key={item.id}
-            className="grid grid-cols-[2fr_1fr_1fr_1fr] items-center border-b border-gray-100 py-8"
+            className="lg:grid grid lg:grid-cols-[2fr_1fr_1fr_1fr]  xs:grid grid-cols-4 items-center border-b border-gray-100 py-8"
           >
             <Product item = {item} removeFromCart={removeFromCart}/>
             <ProductPrice item = {item}/>
